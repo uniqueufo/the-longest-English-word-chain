@@ -1,14 +1,8 @@
 package com.ly;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
 import javax.swing.*;
 import java.awt.event.*;
-import javax.swing.JFileChooser;
-import javax.swing.JTextField;
-import javax.swing.JTextArea;
-import javax.swing.JOptionPane;
+import java.awt.*;
 import java.io.*;
-import java.awt.Color;
 
 public class test extends JFrame{
 
@@ -63,6 +57,10 @@ public class test extends JFrame{
             Monitor9 exitm = new Monitor9();
             jbs[8].addActionListener(exitm);
 
+            for(int i=0;i<size;i++)
+            {
+                jbs[i].setFont(new Font("Times New Roman", Font.PLAIN, 20));
+            }
             
             this.setLayout(new GridLayout(3,3));
             for(int i=0;i<size;i++)
